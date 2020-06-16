@@ -23,7 +23,7 @@ const Location = () => {
 
     const coords = await getCity(text);
 
-    if (!coords || !coords.adminArea4 || coords.adminArea4 === '') {
+    if (!coords) {
       setError('Please provide a correct place name!');
     } else {
       let cityInLS = JSON.parse(localStorage.getItem('city'));

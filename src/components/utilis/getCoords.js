@@ -16,7 +16,7 @@ export const getCoords = async (lat, lon) => {
 export const getCity = async city => {
   try {
     const coords = await axios.get(
-      `http://open.mapquestapi.com/geocoding/v1/address?key=Wb2OY33bA66bhUKnyuGt7H6cyrk5fX40&location=${city}`
+      `https://open.mapquestapi.com/geocoding/v1/address?key=Wb2OY33bA66bhUKnyuGt7H6cyrk5fX40&location=${city}`
     );
 
     return coords.data.results[0].locations[0];
