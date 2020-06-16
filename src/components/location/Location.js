@@ -24,17 +24,18 @@ const Location = () => {
     const coords = await getCity(text);
 
     if (!coords) {
-      setError('Please provide a correct place name!');
+      setError('Please provide a place name!');
     } else {
       let cityInLS = JSON.parse(localStorage.getItem('city'));
 
-      if (cityInLS) {
+      if (!cityInLS) {
         localStorage.setItem('city', []);
-        cityInLS = [...cityInLS, text];
-        localStorage.setItem('city', JSON.stringify(cityInLS));
-        setCities(cityInLS);
-        setText('');
       }
+
+      const citiesArray = cityInLS ? [...cityInLS, text] : [text];
+      localStorage.setItem('city', JSON.stringify(citiesArray));
+      setCities(citiesArray);
+      setText('');
     }
   };
 
