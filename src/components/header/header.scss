@@ -1,0 +1,56 @@
+.header {
+  //background-image: url('https://media.giphy.com/media/l2JIhq7AR3J7Qq9Hy/giphy.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  justify-items: center;
+  justify-content: center;
+  height: 55vh;
+  z-index: 10;
+  opacity: 1;
+
+  position: sticky;
+  top: 0px;
+  &--h1 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 2rem;
+    font-weight: 200;
+
+    margin-top: 2rem;
+    opacity: 1;
+  }
+  &--h2 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 5rem;
+    opacity: 1;
+  }
+  &--h4 {
+    font-size: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+.header1 {
+  opacity: 1;
+  margin-top: 30px;
+}
+.header2 {
+  height: 50px;
+  opacity: 1;
+}
+.cond-timezone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

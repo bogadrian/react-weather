@@ -1,0 +1,64 @@
+.sticky-div2 {
+  position: sticky;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  //background-color: #2b8fc1;
+  //background-image: url('./img/sunny.png');
+  background-position: top;
+  z-index: -100;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.element-body {
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  border: 1px solid;
+  border-color: white;
+  height: 5rem;
+  padding: 3rem;
+  margin-top: 1rem;
+  //background-color: #1b81bf;
+  &:last-child {
+    margin-bottom: 4rem;
+  }
+}
+.sun-container {
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  border: 1px solid;
+  border-color: white;
+  height: 5rem;
+  padding: 3rem;
+  margin-top: 1rem;
+  //background-color: #1b81bf;
+}
+
+.element-body-sun {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.daily {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}

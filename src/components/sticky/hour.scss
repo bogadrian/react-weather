@@ -1,0 +1,27 @@
+.hour-container {
+  display: flex;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.hour-el {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+  text-decoration: none;
+}
+
+.hour-icon {
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.hour-temperature {
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}

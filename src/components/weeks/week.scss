@@ -1,0 +1,27 @@
+.week-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: -200;
+  width: 100%;
+}
+
+.week-el {
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 0.5px solid;
+  border-color: white;
+
+  align-items: center;
+  width: 90%;
+
+  height: 5rem;
+  padding: 3rem;
+  margin-top: 0.2rem;
+  //background-color: #1b81bf;
+}
