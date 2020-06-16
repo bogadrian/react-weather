@@ -12,6 +12,7 @@ const PlacesList = () => {
   const history = useHistory();
 
   const [cit, setCit] = useState([]);
+  console.log(cit);
 
   const handleDelete = index => {
     if (cities.length > 0) {
