@@ -21,11 +21,13 @@ import bClouds from '../../img/clouds.gif';
 import bThunderstorm from '../../img/thundestrorm.gif';
 import bRain from '../../img/rain.gif';
 import bSnow from '../../img/snow.gif';
+import bHaze from '../../img/haze.gif';
 import nClear from '../../img/clear-night.gif';
 import nCloudy from '../../img/cloudy-night.gif';
 import nDrizzle from '../../img/rainy-night.gif';
 import nRainy from '../../img/drizzle-night.gif';
 import nStormy from '../../img/stormy-night.gif';
+import nHaze from '../../img/night-haze.gif';
 import Polar from '../../img/polar.jfif';
 
 const Home = () => {
@@ -74,6 +76,10 @@ const Home = () => {
     back = nRainy;
   } else if (background === 'stormy-night') {
     back = nStormy;
+  } else if (background === 'haze') {
+    back = bHaze;
+  } else if (background === 'haze-night') {
+    back = nHaze;
   } else if (background === 'no-sunrise') {
     back = Polar;
   }

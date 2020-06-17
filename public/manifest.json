@@ -1,6 +1,6 @@
 {
-  "short_name": "Bogdan weather",
-  "name": "A weather App with React Js",
+  "short_name": "Bogdan Weather",
+  "name": "A weather App with React Js built by Bogdan Adrian",
   "icons": [
     {
       "src": "favicon.ico",

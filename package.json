@@ -1,6 +1,6 @@
 {
   "homepage": "https://bogdan-weather.netlify.app",
-  "name": "meteo",
+  "name": "Meteo-Bogdan",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
