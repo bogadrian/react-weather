@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Plus from '../../img/plus.svg';
+import Plus from '../../img/Plus.svg';
 
 import './footer.scss';
 
@@ -27,7 +27,12 @@ const Footer = () => {
           <img
             src={Plus}
             alt="alt"
-            style={{ height: '3rem', cursor: 'pointer', marginRight: '3rem' }}
+            style={{
+              height: '3rem',
+              cursor: 'pointer',
+              marginRight: '3rem',
+              color: 'blue'
+            }}
           />
         </Link>
       </div>

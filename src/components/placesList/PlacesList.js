@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 import './placesList.scss';
 
 import { setCity } from '../../redux/setCity/setCity-actions';
-import Delete from '../../img/delete.svg';
+import Delete from '../../img/Delete.svg';
 
 const PlacesList = () => {
   const cities = JSON.parse(localStorage.getItem('city'));
@@ -40,7 +40,11 @@ const PlacesList = () => {
               className="img-delete"
               onClick={handleDelete.bind(null, index)}
             >
-              <img src={Delete} alt="delete" style={{ height: '2rem' }} />
+              <img
+                src={Delete}
+                alt="delete"
+                style={{ height: '100%', width: '100%' }}
+              />
             </div>
           </div>
         ))}
