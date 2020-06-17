@@ -3,8 +3,6 @@
   opacity: 1;
   background-repeat: no-repeat;
   background-size: cover;
-  //background-color: #2b8fc1;
-  //background-image: url('./img/sunny.png');
   background-position: top;
   z-index: -100;
   padding: 1rem;
@@ -28,7 +26,6 @@
   height: 5rem;
   padding: 3rem;
   margin-top: 1rem;
-  //background-color: #1b81bf;
   &:last-child {
     margin-bottom: 1rem;
   }
@@ -47,7 +44,6 @@
   height: 5rem;
   padding: 3rem;
   margin-top: 1rem;
-  //background-color: #1b81bf;
 }
 
 .element-body-sun {

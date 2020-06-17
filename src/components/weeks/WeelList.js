@@ -25,7 +25,7 @@ const WeekList = ({ data, back }) => {
       <span>
         <img
           style={{ height: '40px', marginTop: '10px' }}
-          src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
+          src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
           alt="alt"
         />
       </span>

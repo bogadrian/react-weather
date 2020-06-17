@@ -28,7 +28,7 @@ const ScrollList = ({ hour }) => {
       <div className="hour-icon">
         <img
           style={{ height: '40px', marginTop: '10px' }}
-          src={`http://openweathermap.org/img/wn/${hour.weather[0].icon}.png`}
+          src={`https://openweathermap.org/img/wn/${hour.weather[0].icon}.png`}
           alt="alt"
         />
       </div>

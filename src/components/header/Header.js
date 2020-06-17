@@ -46,7 +46,7 @@ const Header = ({ opac, city }) => {
           <div>
             <img
               style={{ height: '40px', marginTop: '10px' }}
-              src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
+              src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
               alt="alt"
             />
           </div>
