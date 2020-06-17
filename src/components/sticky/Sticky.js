@@ -20,7 +20,7 @@ const Sticky = ({ opac }) => {
             unix
             format="dddd MMMM YYYY"
             tz={timezone}
-            style={{ fontSize: '3rem', fontWeight: '200' }}
+            style={{ fontSize: '2rem', fontWeight: '400' }}
           >
             {unixTimestamp}
           </Moment>

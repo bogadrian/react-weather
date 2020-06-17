@@ -1,5 +1,5 @@
 {
-  "homepage": "https://localhost:3000",
+  "homepage": "https://bogdan-weather.netlify.app",
   "name": "meteo",
   "version": "0.1.0",
   "private": true,
