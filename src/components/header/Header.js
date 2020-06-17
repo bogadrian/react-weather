@@ -34,8 +34,8 @@ const Header = ({ opac, city }) => {
           <span
             style={{ fontSize: '3rem', fontWeight: '400', marginRight: '1rem' }}
           >
-            {city}{' '}
-          </span>{' '}
+            {city}
+          </span>
           /
           <span style={{ color: 'red', fontSize: '3rem', fontWeight: '400' }}>
             {continent}
@@ -55,7 +55,7 @@ const Header = ({ opac, city }) => {
               unix
               format="H:ss"
               tz={timezone}
-              style={{ fontSize: '2rem' }}
+              style={{ fontSize: '2rem', fontWeight: '400' }}
             >
               {unixTimestamp}
             </Moment>

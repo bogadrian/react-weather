@@ -1,17 +1,14 @@
 .header {
-  //background-image: url('https://media.giphy.com/media/l2JIhq7AR3J7Qq9Hy/giphy.gif');
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   grid-template-columns: 1fr;
-
   justify-items: center;
   justify-content: center;
   height: 55vh;
   z-index: 10;
   opacity: 1;
-
-  position: sticky;
+  position: relative;
   top: 0px;
   &--h1 {
     display: grid;

@@ -6,25 +6,30 @@ import './footer.scss';
 
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <div className="footer">
-        <div
+    <div className="footer">
+      <div className="footer-el">
+        <Link
           style={{
-            marginRight: '10px'
+            color: 'white',
+            textDecoration: 'none',
+            display: 'flex',
+            justifyContent: 'flex-end',
+            alignItems: 'center'
           }}
+          to="/location"
         >
-          <Link
-            style={{ color: 'white', textDecoration: 'none' }}
-            to="/location"
+          <h3
+            style={{ fontSize: '2rem', marginRight: '1rem', cursor: 'pointer' }}
           >
-            <h3>New Location</h3>
-          </Link>
-        </div>
-        <div>
-          <Link to="/location">
-            <img src={Plus} alt="alt" style={{ height: '30px' }} />
-          </Link>
-        </div>
+            New Location
+          </h3>
+
+          <img
+            src={Plus}
+            alt="alt"
+            style={{ height: '3rem', cursor: 'pointer', marginRight: '3rem' }}
+          />
+        </Link>
       </div>
     </div>
   );
