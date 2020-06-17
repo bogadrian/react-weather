@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 import './placesList.scss';
 
 import { setCity } from '../../redux/setCity/setCity-actions';
-import Delete from '../../img/Delete.svg';
+import Delete from '../../img/delete.svg';
 
 const PlacesList = () => {
   const cities = JSON.parse(localStorage.getItem('city'));

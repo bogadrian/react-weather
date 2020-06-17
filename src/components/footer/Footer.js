@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Plus from '../../img/Plus.svg';
+import Plus from '../../img/plus.svg';
 
 import './footer.scss';
 

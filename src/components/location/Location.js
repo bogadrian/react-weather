@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './location.scss';
 
-import Search from '../../img/Search.svg';
+import Search from '../../img/search.svg';
 import { getCity } from '../utilis/getCoords';
 import PlacesList from '../placesList/PlacesList';
 
