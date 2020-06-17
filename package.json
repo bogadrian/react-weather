@@ -1,4 +1,5 @@
 {
+  "homepage": "https://localhost:3000",
   "name": "meteo",
   "version": "0.1.0",
   "private": true,
