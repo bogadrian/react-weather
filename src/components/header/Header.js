@@ -17,7 +17,7 @@ const Header = ({ opac, city }) => {
 
   let continent;
   if (timezone) {
-    continent = timezone.split('/')[0].substring(0, 2);
+    continent = timezone.split('/')[0];
   }
 
   const celsius = temp - 273.15;

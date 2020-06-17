@@ -1,4 +1,5 @@
-const getBack = (condition, dt, sunrise, sunset) => {
+const getBack = (condition, dt, sunrise) => {
+  console.log(condition, dt);
   let background;
   if (condition === 'Clear' && dt > sunrise) {
     background = 'sunny';
@@ -22,6 +23,8 @@ const getBack = (condition, dt, sunrise, sunset) => {
     background = 'rainy-night';
   } else if (condition === 'Clouds' && dt < sunrise) {
     background = 'cloudy-night';
+  } else if (!sunrise) {
+    background = 'no-sunrise';
   }
   return background;
 };
