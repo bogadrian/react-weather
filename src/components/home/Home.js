@@ -117,7 +117,7 @@ const Home = () => {
   return (
     <div className="container" style={{ backgroundImage: `url(${back})` }}>
       <div className="container1" style={{ backgroundImage: `url(${back})` }}>
-        {opac && city ? <Header opac={opac} city={city} /> : <Spinner />}
+        {city ? <Header opac={opac} city={city} /> : <Spinner />}
       </div>
       <Sticky opac={opac} background={back} />
 
