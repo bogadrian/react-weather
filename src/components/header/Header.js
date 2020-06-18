@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux';
 import Moment from 'react-moment';
 import 'moment-timezone';
 
+import Spinner from '../spinner/Spinner';
+
 import './header.scss';
 import { get } from 'lodash';
 
@@ -29,42 +31,50 @@ const Header = ({ opac, city }) => {
 
   return (
     <div className="header">
-      <div className="header1">
-        <div style={{ display: 'flex' }}>
-          <span
-            style={{ fontSize: '3rem', fontWeight: '400', marginRight: '1rem' }}
-          >
-            {city}
-          </span>
-          /
-          <span style={{ color: 'red', fontSize: '3rem', fontWeight: '400' }}>
-            {continent}
-          </span>
-        </div>
-        <div className="cond-timezone">
-          <h4 className="header--h4">{conditions}</h4>
-          <div>
-            <img
-              style={{ height: '40px', marginTop: '10px' }}
-              src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
-              alt="alt"
-            />
-          </div>
-          <span>
-            <Moment
-              unix
-              format="H:ss"
-              tz={timezone}
-              style={{ fontSize: '2rem', fontWeight: '400' }}
+      {city ? (
+        <div className="header1">
+          <div style={{ display: 'flex' }}>
+            <span
+              style={{
+                fontSize: '3rem',
+                fontWeight: '400',
+                marginRight: '1rem'
+              }}
             >
-              {unixTimestamp}
-            </Moment>
-          </span>
+              {city}
+            </span>
+            /
+            <span style={{ color: 'red', fontSize: '3rem', fontWeight: '400' }}>
+              {continent}
+            </span>
+          </div>
+          <div className="cond-timezone">
+            <h4 className="header--h4">{conditions}</h4>
+            <div>
+              <img
+                style={{ height: '40px', marginTop: '10px' }}
+                src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
+                alt="alt"
+              />
+            </div>
+            <span>
+              <Moment
+                unix
+                format="H:ss"
+                tz={timezone}
+                style={{ fontSize: '2rem', fontWeight: '400' }}
+              >
+                {unixTimestamp}
+              </Moment>
+            </span>
+          </div>
+          <h2 style={{ opacity: `${opac}` }} className="header--h2">
+            {celsius.toFixed()} &#xb0;
+          </h2>
         </div>
-        <h2 style={{ opacity: `${opac}` }} className="header--h2">
-          {celsius.toFixed()} &#xb0;
-        </h2>
-      </div>
+      ) : (
+        <Spinner />
+      )}
     </div>
   );
 };
