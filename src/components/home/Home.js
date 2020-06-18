@@ -12,6 +12,7 @@ import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import Sticky from '../sticky/Sticky';
 import Body from '../body/Body';
+import Spinner from '../spinner/Spinner';
 
 import { get } from 'lodash';
 
@@ -116,7 +117,7 @@ const Home = () => {
   return (
     <div className="container" style={{ backgroundImage: `url(${back})` }}>
       <div className="container1" style={{ backgroundImage: `url(${back})` }}>
-        <Header opac={opac} city={city} />
+        {opac && city ? <Header opac={opac} city={city} /> : <Spinner />}
       </div>
       <Sticky opac={opac} background={back} />
 
