@@ -27,7 +27,11 @@ const getBack = (condition, dt, sunrise) => {
     background = 'no-sunrise';
   } else if (condition === 'Haze' && dt < sunrise) {
     background = 'haze';
-  } else if (condition === 'Haze' || condition === 'Mist') {
+  } else if (
+    condition === 'Haze' ||
+    condition === 'Mist' ||
+    condition === 'Fog'
+  ) {
     background = 'haze-night';
   }
   return background;
