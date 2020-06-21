@@ -41,15 +41,15 @@ const Header = ({ opac, city }) => {
                 marginRight: '1rem'
               }}
             >
-              {city}
+              {city ? city : null}
             </span>
             /
             <span style={{ color: 'red', fontSize: '3rem', fontWeight: '400' }}>
-              {continent}
+              {continent ? continent : null}
             </span>
           </div>
           <div className="cond-timezone">
-            <h4 className="header--h4">{conditions}</h4>
+            <h4 className="header--h4">{conditions ? conditions : null}</h4>
             <div>
               <img
                 style={{ height: '40px', marginTop: '10px' }}
@@ -69,7 +69,7 @@ const Header = ({ opac, city }) => {
             </span>
           </div>
           <h2 style={{ opacity: `${opac}` }} className="header--h2">
-            {celsius.toFixed()} &#xb0;
+            {celsius ? celsius.toFixed() : null} &#xb0;
           </h2>
         </div>
       ) : (
